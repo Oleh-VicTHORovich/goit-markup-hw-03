@@ -1,7 +1,7 @@
 :root {
     --accent-color: #2196F3;
     --accent-bg-button-color: #2196F3;
-    --accent-text-color: #fff;
+    --accent-text-color: #ffffff;
     --bg-footer-color: #2F303A;
     --bg-hero-section: #2F303A;
     --section-title-color: #212121;
@@ -17,10 +17,10 @@ p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-ul {
+/* ul {
     margin: 0;
     padding-left: 0;
-}
+} */
 
 img {
     display: block;
@@ -29,7 +29,7 @@ img {
 body {
     font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #212121;
-    background: #fff;
+    background: #ffffff;
     font-size: 14px;
     letter-spacing: 0.03em;
 }
@@ -40,6 +40,8 @@ body {
 
 .list {
     list-style: none;
+    margin: 0;
+    padding-left: 0;
 }
 
 .container {
@@ -54,6 +56,7 @@ body {
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 .heder-logo {
@@ -139,6 +142,8 @@ body {
     margin-right: 50px;
 }
 
+
+
 /*---------------------------HERO-----------------------*/
 
 .hero {
@@ -162,22 +167,19 @@ body {
 
 .btn {
     font-family: inherit;
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    display: block;
+    padding: 10px 32px;
+    border-radius: 4px;
     letter-spacing: 0.06em;    
-    color: white;
+    color: var(--accent-text-color);
     border: none; 
-    background: #2196F3;
+    background: var(--accent-bg-button-color);
     cursor: pointer; 
     margin: 0 auto; 
     min-width: 200px;
-    height: 50px;
 }
 
 .btn:hover,
@@ -193,7 +195,7 @@ body {
 
 .action-list {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .visually-hidden {
@@ -210,9 +212,14 @@ body {
 }
 
 .action-item {
+    margin-right: 30px;
     width: 270px;
-    height: 101px;
+    /* height: 101px; */
     outline: 1px solid pink;
+}
+
+.action-item:last-child {
+    margin-right: 0px;
 }
 
 .action-title {
@@ -243,7 +250,7 @@ body {
 
 .galary-list {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .galary-title {
@@ -257,6 +264,10 @@ body {
     margin-bottom: 50px;
 }
 
+.galary-picture:not(:last-child) {
+    margin-right: 30px;
+}
+
 /*---------------------------Сотрудники компании-----------------------*/
 
 .colleagues {
@@ -267,13 +278,19 @@ body {
 
 .colleagues-list {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .colleagues-item {
     width: 270px;
-    height: 368px;
+    /* height: 368px; */
     outline: 1px solid blueviolet;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+}
+
+.colleagues-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .card-discribe {
@@ -339,6 +356,10 @@ body {
     margin-top: 20px;
 }
 
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
 .footer-link {
     font-family: inherit;       
     font-size: 14px;
@@ -378,15 +399,14 @@ body {
     flex-wrap: wrap;
 
     margin-top: -30px;
-    margin-left: -30px;
-    
+    margin-left: -30px;    
 }
 
 .produkts-lowlist > .produkts-item {
     width: 370px;
-    height: 404px;
+    /* height: 404px; */
     outline: 1px solid green;
-    flex-basis: calc(100% / 3 - 30px);
+    /* flex-basis: calc(100% / 3 - 30px); */
     margin-top: 30px;
     margin-left: 30px;
 }
@@ -415,14 +435,19 @@ body {
     letter-spacing: 0.03em;
     color: inherit;
     border: none;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 .produkts-btn {
-    height: 38px;
-    margin-right: 8px;
+    /* margin-right: 8px; */
     justify-content: center;
     align-items: center;
     padding: 6px 22px;
+}
+
+.produkts-btn:last-child {
+    margin-right: 8px;
 }
 
 .produkts-btn:hover,
@@ -454,3 +479,4 @@ body {
     letter-spacing: 0.03em;
     color: var(--article-products-section);
 }
+
