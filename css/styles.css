@@ -110,8 +110,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
-    margin-left: 50px;
+    color: #757575;    
 }
 
 .heder-tel:hover,
@@ -140,6 +139,10 @@ body {
 
 .heder-item:not(:last-child) {
     margin-right: 50px;
+}
+
+.heder-lowlist-contact:not(:first-child) {
+    margin-left: 50px;
 }
 
 
@@ -226,7 +229,7 @@ body {
     font-family: inherit;        
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;    
     color: var(--article-title-color);
@@ -405,15 +408,14 @@ body {
 .produkts-lowlist > .produkts-item {
     width: 370px;
     /* height: 404px; */
-    outline: 1px solid green;
+    border: 1px solid rgba(238, 238, 238, 1);
     /* flex-basis: calc(100% / 3 - 30px); */
     margin-top: 30px;
     margin-left: 30px;
 }
 
 .produkts-kard {
-    padding: 20px 24px 20px 24px;
-    
+    padding: 20px 24px 20px 24px;    
 }
 
 
@@ -446,7 +448,7 @@ body {
     padding: 6px 22px;
 }
 
-.produkts-btn:last-child {
+.produkts-highlist-item:not(:last-child) {
     margin-right: 8px;
 }
 
